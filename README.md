@@ -74,3 +74,13 @@ When I click 'Delete'
 Then I should see a list of all books
 And the deleted book should not be listed
 ```
+
+## STRETCH
+
+* Refactor the views to use the same for for `Edit` and `New`
+* Write validations for form input that ensures:
+  * Title length is not longer than 80 characters
+  * Author name is not longer than 40 characters
+  * Description is not empty
+* Extract all database calls out of your routes and use functions that do the work for you instead.
+* All validation functions should be written outside of your routes.
