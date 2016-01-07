@@ -22,3 +22,7 @@ input[type="radio"] {
 table {
   margin-top: 3em;
 }
+
+.btn-link {
+  padding: 0px;
+}
