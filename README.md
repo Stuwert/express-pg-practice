@@ -77,7 +77,8 @@ And the deleted book should not be listed
 
 ## STRETCH
 
-* Refactor the views to use the same for for `Edit` and `New`
+* Refactor the views to use the same template for `Edit` and `New`
+  * look up Express `include`
 * Write validations for form input that ensures:
   * Title length is not longer than 80 characters
   * Author name is not longer than 40 characters
