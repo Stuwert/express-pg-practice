@@ -1,11 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var runQuery = require('../db/connection');
-/* GET home page. */
+
 router.get('/books', function(req, res, next) {
-  runQuery('SELECT * FROM books', function(results) {
-     res.send(results.rows);
-   });
+  res.render('books/index', {books: results.rows});
 });
 
 module.exports = router;
