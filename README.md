@@ -12,6 +12,8 @@ Your mission is to create a CRUD app that allows users to add books to a library
 
 __Use Knex to interface with your database in your routes.__
 
+__All of your books routes should be in `routes/books.js`__
+
 ## Create a database called library
 
 ```
@@ -35,7 +37,7 @@ __#1__
 
 ```
 When I click 'Add a Book'
-Then I should see a form
+Then I should see a form to add a new book
 ```
 
 __#2__
@@ -43,6 +45,7 @@ __#2__
 ```
 When I submit the form for a new book
 Then I should return to my list of all books
+And I should see my new book listed with all books
 ```
 
 __#3__
@@ -52,7 +55,7 @@ When I click on the title of a book
 Then I should be taken to a 'show' page
 And on that page I should see all of the information for that book
 And I should see a link to 'Edit' the book
-And I should see a button to 'Delete' the book
+And I should see a link to 'Delete' the book
 ```
 __#4__
 
